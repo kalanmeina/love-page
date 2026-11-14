@@ -101,15 +101,35 @@ body {
 
 /* 心形按钮样式 */
 .heart-btn {
-    background: none;
-    border: none;
+    background-color: rgba(255, 255, 255, 0.4);
+    /* 半透明白色，类似毛玻璃 */
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    /* 非常淡的白色边框 */
+    border-radius: 50px;
+    /* 胶囊圆角 */
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.15);
+    /* 非常淡的粉色阴影 */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 20px;
     cursor: pointer;
-    transition: transform 0.3s ease;
-    width: 60px;
-    height: 60px;
-    padding: 10px;
+    color: #ff4d6d;
+    /* 深粉色文字 */
+    font-size: 15px;
 }
 
+/* 顺便可以控制一下里面 SVG 心形图标的大小 */
+.heart-btn .heart-icon {
+    width: 20px;
+    height: 20px;
+}
+.heart-btn .heart-icon {
+    width: 20px;
+    height: 20px;
+}
 .heart-btn:hover {
     transform: scale(1.1);
 }
